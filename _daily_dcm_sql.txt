@@ -1,0 +1,24 @@
+8. Trimmed local file found under /home/zoe_shuai and deleting now
+1 - Searching reports for Account ID 817771 (Diageo DCM) with Profile ID 4596895.
+
+2 - Found STANDARD report with ID 141775091 and name "API_Report_Diageo_US".
+
+3. File with ID 792586217 has been created
+
+4. File status is PROCESSING, sleeping for 10 seconds.
+4. File status is PROCESSING, sleeping for 25 seconds.
+4. File status is PROCESSING, sleeping for 58 seconds.
+4. File status is PROCESSING, sleeping for 126 seconds.
+4. File status is PROCESSING, sleeping for 252 seconds.
+4. File status is PROCESSING, sleeping for 361 seconds.
+4. File status is PROCESSING, sleeping for 600 seconds.
+4. File status is PROCESSING, sleeping for 600 seconds.
+4. File status is PROCESSING, sleeping for 600 seconds.
+4. File status is PROCESSING, sleeping for 600 seconds.
+4. File status is PROCESSING, sleeping for 600 seconds.
+5. File processing deadline exceeded.
+7. "API_Report_Diageo_US_2018-08-15.csv" uploaded from local drive /home/zoe_shuai to bucket "gs://neallab/diageo_dcm/".
+
+
+echo Y | gcloud sql import csv nealanalytics gs://neallab/diageo_dcm/API_Report_Diageo_US_2018-08-15.csv --database=diageo --table=dcm
+9. "API_Report_Diageo_US_2018-08-15.csv" uploaded from bucket "gs://neallab/diageo_dcm/" to MySQL table "diageo.dcm"
